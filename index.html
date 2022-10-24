@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <title>document</title>
+</head>
+<body class="body">
+    <h1 class="titulo">calculadora</h1>
+    <div id="app">
+        <form name="calculator">
+            <input type="textfield" name="ans" value=""     autocomplete="off" readonly>
+            <div class="botonera">
+            <input type="button" value="7" onclick="document.calculator.ans.value+='7'" class="numeros">
+            <input type="button" value="8" onclick="document.calculator.ans.value+='8'" class="numeros">
+            <input type="button" value="9" onclick="document.calculator.ans.value+='9'" class="numeros">
+            <input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="operador">
+            <br>
+            <input type="button" value="4" onclick="document.calculator.ans.value+='4'" class="numeros">
+            <input type="button" value="5" onclick="document.calculator.ans.value+='5'" class="numeros">
+            <input type="button" value="6" onclick="document.calculator.ans.value+='6'" class="numeros">
+            <input type="button" value="-" onclick="document.calculator.ans.value+='-'" class="operador">
+            <br>
+            <input type="button" value="1" onclick="document.calculator.ans.value+='1'" class="numeros">
+            <input type="button" value="2" onclick="document.calculator.ans.value+='2'" class="numeros">
+            <input type="button" value="3" onclick="document.calculator.ans.value+='3'" class="numeros">
+            <input type="button" value="X" onclick="document.calculator.ans.value+='*'" class="operador">
+            <br>
+            <input type="button" value="0" onclick="document.calculator.ans.value+='0'" class="numeros">
+            <input type="reset" value="C" class="clear">
+            <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="operador">
+            <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="operador">
+            </div>
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
