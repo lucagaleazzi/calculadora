@@ -24,17 +24,21 @@
     width: 100%;
     background-color: black;
     border-radius: 10px;
+    border: solid 2px white;
 
 }
 #app input[type=textfield] {
-    width: 97%;
+    width:98.9%;
     height: 150px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    border-bottom: solid 2px white;
     text-align: end;
     font-size: 3rem;
     color: white;
     background-color: black;
-    border: none;
+    
 }
 #app .botonera{
     display:block;
